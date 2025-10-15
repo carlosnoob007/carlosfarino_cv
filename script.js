@@ -4,7 +4,10 @@ const info = document.getElementById("info");
 const menuNav = document.getElementById("menuNav");
 const botonMovil = document.getElementById("botonMovil");
 const iconoMenu = document.getElementById("iconoMenu");
+const spam = document.getElementById("spam");
 
+
+/* EVENTOS */
 
 botonMovil.addEventListener("click", () => {
     menuNav.classList.toggle("hidden");
@@ -16,8 +19,39 @@ botonMovil.addEventListener("click", () => {
     iconoMenu.classList.toggle("rotate-90");
 });
 
+spam.addEventListener("click", () => {
+    cambioUrl();
+});
 
-function cambioDatos() {
+//Mantener los datos del select u otra funcion como eran antes de recargar la página
+window.addEventListener("pageshow", function() {
+    cambioDatos();
+});
+
+
+
+/* FUNCIONES */
+
+function cambioUrl(){
+
+    switch(areaDatos.value) {
+        case "cedula":
+            
+            break;
+        case "telefono":
+            window.location.href = "https://wa.me/593988471445";
+            break;
+        case "correo":
+            
+            break;
+        case "direccion":
+            
+            break;
+    }
+
+}
+
+function cambioDatos(){
 
     switch(areaDatos.value) {
         case "cedula":
@@ -42,6 +76,8 @@ function cambioDatos() {
             break;
     }
 }
+
+
 
 // Animación sencilla para que el menú aparezca de forma suave
 tailwind.config = {
