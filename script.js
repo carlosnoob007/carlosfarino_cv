@@ -41,7 +41,7 @@ function cambioUrl(){
             window.location.href = "https://wa.me/593988471445";
             break;
         case "correo":
-            window.location.href = "mailto:josuefcj16@gmail.com";
+            window.location.href = "mailto:carlosfcj16@gmail.com";
             break;
         case "direccion":
             window.location.href = "https://maps.app.goo.gl/bgxqgmwrGSssAXbP8";
