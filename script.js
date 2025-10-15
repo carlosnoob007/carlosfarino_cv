@@ -36,16 +36,15 @@ function cambioUrl(){
 
     switch(areaDatos.value) {
         case "cedula":
-            
             break;
         case "telefono":
             window.location.href = "https://wa.me/593988471445";
             break;
         case "correo":
-            
+            window.location.href = "mailto:josuefcj16@gmail.com";
             break;
         case "direccion":
-            
+            window.location.href = "https://maps.app.goo.gl/bgxqgmwrGSssAXbP8";
             break;
     }
 
